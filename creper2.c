@@ -34,7 +34,7 @@ void init(void){
 
 /* FUNÇÃO NAO TESTADA MAS COM A LOGICA FUNCIONAL */
 void montarQuadrado(int xInicio, int xFim, int yCima, int yBaixo, float r, float g, float b){
-glPolygonMode(GL_BACK, GL_FILL);
+    glPolygonMode(GL_BACK, GL_FILL);
     glColor3f(r,g,b);
     glBegin(GL_POLYGON);
     glVertex2i(xInicio,yCima);  glVertex2i(xFim,yCima); 
@@ -121,7 +121,7 @@ void display(void){
     
 	montarQuadrado(40,60,40,20,0.2,0.4,0.3);
     
-    montarQuadrado(80,100,40,20,0.2,0.4,0.3);
+        montarQuadrado(80,100,40,20,0.2,0.4,0.3);
     
     
     //detalhes pé direito
@@ -129,7 +129,7 @@ void display(void){
     
 	montarQuadrado(260,280,40,20,0.2,0.4,0.3);    
     
-    montarQuadrado(240,260,40,20,1.0,1.0,1.0);
+        montarQuadrado(240,260,40,20,1.0,1.0,1.0);
     
 	montarQuadrado(280,300,40,20,1.0,1.0,1.0);
 
@@ -137,7 +137,7 @@ void display(void){
     
 	montarQuadrado(240,260,80,60,0.2,0.4,0.3);
     
-    montarQuadrado(280,300,100,80,0.2,0.4,0.3);
+        montarQuadrado(280,300,100,80,0.2,0.4,0.3);
    
    
     //brancos da cabeça
@@ -167,11 +167,11 @@ void display(void){
    
 	montarQuadrado(220,240,400,380,0.2,0.4,0.3); 
 
-    montarQuadrado(60,80,360,340,0.2,0.4,0.3);
+        montarQuadrado(60,80,360,340,0.2,0.4,0.3);
     
-    montarQuadrado(100,120,340,320,0.2,0.4,0.3);
+        montarQuadrado(100,120,340,320,0.2,0.4,0.3);
     
-    montarQuadrado(220,240,340,320,0.2,0.4,0.3);
+        montarQuadrado(220,240,340,320,0.2,0.4,0.3);
      
     
     glFlush();

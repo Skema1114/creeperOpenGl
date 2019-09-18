@@ -38,7 +38,7 @@ void montarQuadrado(int xInicio, int xFim, int yCima, int yBaixo, float r, float
     glColor3f(r,g,b);
     glBegin(GL_POLYGON);
     glVertex2i(xInicio,yCima);  glVertex2i(xFim,yCima); 
-	glVertex2i(xFim,yBaixo); glVertex2i(xInicio,yBaixo); 
+    glVertex2i(xFim,yBaixo); glVertex2i(xInicio,yBaixo); 
     glEnd();
 }
 
@@ -67,7 +67,7 @@ void display(void){
     montarQuadrado(200,900,1000,600,0.0,0.3,0.0);
     
     //sombras
-	glPolygonMode(GL_BACK, GL_FILL);
+    glPolygonMode(GL_BACK, GL_FILL);
     glColor3f(0.0, 0.1, 0.0);
     glBegin(GL_POLYGON);
     glVertex2i(200,600);  glVertex2i(900,600); glVertex2i(850,550); glVertex2i(250,550); 
@@ -76,7 +76,7 @@ void display(void){
     
     
     //borda preta cabeça
-	montarQuadrado(40,280,540,300,0.0,0.0,0.0);
+        montarQuadrado(40,280,540,300,0.0,0.0,0.0);
 
     
     //verde cabeça  
@@ -213,17 +213,17 @@ void display(void){
 
 	montarQuadrado(100,120,440,420,0.1,0.7,0.3);
 	
-    montarQuadrado(200,220,440,420,0.1,0.7,0.3);
+        montarQuadrado(200,220,440,420,0.1,0.7,0.3);
 	
-    montarQuadrado(100,120,400,380,0.1,0.7,0.3);
+        montarQuadrado(100,120,400,380,0.1,0.7,0.3);
 
 	montarQuadrado(220,240,380,360,0.1,0.7,0.3);
     
-    montarQuadrado(100,120,360,340,0.1,0.7,0.3);
+        montarQuadrado(100,120,360,340,0.1,0.7,0.3);
     
-    montarQuadrado(180,200,360,340,0.1,0.7,0.3);
+        montarQuadrado(180,200,360,340,0.1,0.7,0.3);
     
-    montarQuadrado(240,260,360,320,0.1,0.7,0.3);
+        montarQuadrado(240,260,360,320,0.1,0.7,0.3);
 
     
     //brancos da corpo
@@ -263,7 +263,7 @@ void display(void){
 	
 	
 	//sombras
-	glPolygonMode(GL_BACK, GL_FILL);
+    glPolygonMode(GL_BACK, GL_FILL);
     glColor3f(0.3, 0.3, 0.3);
     glBegin(GL_POLYGON);
     glVertex2i(120,120);  glVertex2i(130,100); glVertex2i(130,0); glVertex2i(120,0); 
